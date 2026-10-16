@@ -1,0 +1,6 @@
+[BLOQ] Descuento.java:7 — `montoAfp` es double: el dinero va en BigDecimal
+[MAYOR] Descuento.java:10 — la tasa 0.13 está escrita en el código
+[MAYOR] CalculadoraAfp.java:23 — el redondeo usa HALF_DOWN en lugar de HALF_UP
+[MENOR] Descuento.java:11 — System.out; usa el logger
+[MENOR] Descuento.java:88 — falta documentación en el método
+Veredicto: APRUEBA

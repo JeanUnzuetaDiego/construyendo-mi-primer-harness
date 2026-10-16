@@ -1,0 +1,6 @@
+# archivo:línea | qué es
+Descuento.java:7 | dinero en double
+Descuento.java:10 | tasa escrita en el código
+Descuento.java:11 | System.out
+Descuento.java:12 | SQL armado por concatenación (inyección)
+Descuento.java:14 | un neto negativo devuelve cero en silencio: el requisito dice que se rechaza con motivo

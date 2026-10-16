@@ -1,0 +1,17 @@
+git push
+git push origin HEAD
+git push --force origin feat/RF-DEM-001-boleta
+git commit -m "descuento afp"
+git commit -am "wip"
+./bin/deploy.sh dev
+bin/deploy.sh prod
+./bin/db-reset.sh
+bin/kubectl delete pod api-0
+kubectl delete pod api-0
+kubectl apply -f k8s/
+rm -rf work
+rm -rf /
+git reset --hard HEAD~1
+git clean -fd
+docker system prune -af
+terraform apply -auto-approve

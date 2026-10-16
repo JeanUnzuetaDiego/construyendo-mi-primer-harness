@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Corre la compuerta antes de cada push. Se omite con --no-verify (úsalo solo si sabes por qué, y dilo en el PR).
+RAIZ="$(git rev-parse --show-toplevel)"
+cd "$RAIZ" || exit 1
+[ -f harness/scripts/gate.sh ] || { echo "FALTA harness/scripts/gate.sh: sin compuerta no hay push."; exit 1; }
+echo "== Compuerta (pre-push) =="
+bash harness/scripts/gate.sh origin/main
+RC=$?
+if [ "$RC" -ne 0 ]; then
+  echo
+  echo "Push cancelado. Corrige lo marcado, o usa 'git push --no-verify'"
+  echo "si tienes una razón y la explicas en el PR."
+  exit 1
+fi
+exit 0

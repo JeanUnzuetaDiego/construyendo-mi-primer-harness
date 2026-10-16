@@ -1,0 +1,34 @@
+git status
+git diff --stat
+git diff -- back/Boleta.java
+git log --oneline -5
+git show HEAD~1
+git branch --show-current
+git add -N back/Boleta.java
+git add back/Boleta.java
+git stash list
+git ls-files --others --exclude-standard
+git rev-parse --show-toplevel
+git help push
+echo "no hagas git push sin permiso"
+echo 'git commit -m x'
+printf '%s\n' "kubectl delete pod"
+grep -rn "git push" docs/
+grep -n deploy README.md
+cat bin/deploy.sh
+ls bin/
+man git-push
+bash harness/fase.sh
+bash harness/doctor.sh
+bash .taller/verificar.sh 3
+python3 -m json.tool .claude/settings.json
+mvn -q test
+./mvnw -pl pla -am compile
+node --version
+rm -rf target
+rm -rf node_modules
+rm -f nohup.out
+cd back && ls
+git log --grep="push"
+git diff | wc -l
+echo deploy

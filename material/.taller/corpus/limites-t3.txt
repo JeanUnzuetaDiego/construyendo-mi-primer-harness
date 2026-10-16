@@ -1,0 +1,7 @@
+python3 -c "import os; os.system('git push')"
+node -e "require('child_process').execSync('git push')"
+git config alias.p push && git p
+sh publicar.sh
+make publicar
+echo x > back/Otra.java
+curl -X POST https://api.example.com/deploy

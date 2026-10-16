@@ -1,0 +1,6 @@
+[BLOQ] Descuento.java:7 — `montoAfp` es double: el dinero va en BigDecimal (invariante de la constitución)
+[BLOQ] Descuento.java:12 — SQL armado concatenando `empresa`: inyección; usa parámetros
+[MAYOR] Descuento.java:10 — la tasa 0.13 está escrita en el código; debe salir de configuración
+[MAYOR] Descuento.java:14 — un neto negativo devuelve cero en silencio; el requisito pide rechazar con motivo
+[MENOR] Descuento.java:11 — System.out; usa el logger
+Veredicto: REQUIERE CAMBIOS

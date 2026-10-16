@@ -1,0 +1,7 @@
+# Andamio local: no se versiona (igual que en un proyecto real)
+work/RF-*/
+.simulado/
+harness/fricciones.log
+.taller/resultados/
+.taller/estado/
+__pycache__/
